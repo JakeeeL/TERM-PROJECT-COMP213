@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mogra&display=swap" rel="stylesheet">
+    <title>Cowabunga Pizza</title>
+    <link rel="icon" href="resources/download.png" type="image/x-icon">
+    <link rel="icon" href="resources/download.png" type="image/png">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home">
+        <header class="header">
+            <img src="resources/Untitled-1.png" alt="Cowabunga Pizza Logo">
+
+            <!-- Navigation -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#chefs">Chef's Specials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact & Location</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Video Banner -->
+        <div class="video-banner">
+            <video autoplay loop muted>
+                <source src="resources/6e1a8281befd4fcf9053e762cf51a147.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h1>Welcome to Cowabunga Pizza</h1>
+                <p>Home of the BEST Cheese Slice Pizza in the world</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Page -->
+    <div id="menu">
+        <h2>Our Menu</h2>
+        <div class="dinein">
+            <img src="resources/eedc0a_41843d63a7ea454e9883fbe61d57ec90~mv2.avif" alt="Dine-in Menu">
+            <p>Dine-in Specials</p>
+        </div>
+        <div class="takeout">
+            <img src="resources/MenuTakeOut.avif" alt="Takeout Menu">
+            <p>Takeout Options</p>
+        </div>
+    </div>
+
+<!-- Chef Specials -->
+<div id="chefs" class="carousel">
+    <h2>Chef's Specials</h2>
+    <button class="carousel-btn prev">‹</button>
+    <div class="carousel-track-container">
+        <ul class="carousel-track">
+            <li class="carousel-slide">
+                <img src="resources/truffle pizza.png" alt="Truffle Delight Pizza">
+                <p><strong>Truffle Delight Pizza:</strong> A heavenly blend of truffle oil, wild mushrooms, and aged parmesan atop our signature crust.</p>
+            </li>
+            <li class="carousel-slide">
+                <img src="resources/cowabunga pepperoni +.jpg" alt="Pepperoni+">
+                <p><strong>Pepperoni+:</strong> A delicious combination of marinara, mozzarella blend, cup n char pepperoni, pickled jalapeno, and Sara spicy honey.</p>
+            </li>
+            <li class="carousel-slide">
+                <img src="resources/bunga bites.png" alt="Bunga Bites">
+                <p><strong>Bunga Bites:</strong> Cowabunga sauce, pineapples, toasted sesame, roasted peanuts, and chives. A bold fusion of sweet and savory flavors!</p>
+            </li>
+        </ul>
+    </div>
+    <button class="carousel-btn next">›</button>
+</div>
+
+
+<!-- Gallery Page -->
+<div id="gallery" class="carousel">
+    <h2>Gallery</h2>
+    <button class="carousel-btn prev">‹</button>
+    <div class="carousel-track-container">
+        <ul class="carousel-track">
+            <li class="carousel-slide">
+                <img src="resources/chef makings stuff.png" alt="Chef in Action">
+                <p>Our skilled chef crafting your favorite dishes with passion.</p>
+            </li>
+            <li class="carousel-slide">
+                <img src="resources/outdoor seating next to vw.png" alt="Outdoor Seating">
+                <p>Sunny days, good vibes, and Cowabunga Pizza! Grab a slice and enjoy the outdoors with us!</p>
+            </li>
+            <li class="carousel-slide">
+                <img src="resources/worlds best pizza.png" alt="World's Best Pizza">
+                <p>Celebrating our victory at the World's Best Cheese Slice Competition!</p>
+            </li>
+        </ul>
+    </div>
+    <button class="carousel-btn next">›</button>
+</div>
+
+
+<!-- Customer Reviews Page -->
+<div id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews-section">
+        <div class="review">
+            <p><strong>Emily R.</strong> - 5 stars</p>
+            <p>"The Truffle Delight Pizza is pure luxury! The truffle oil and mushrooms are a match made in heaven. I'll be coming back for more!"</p>
+        </div>
+        <div class="review">
+            <p><strong>Jake T.</strong> - 5 stars</p>
+            <p>"Pepperoni+ has the perfect balance of heat and sweet. The spicy honey is a game-changer. Highly recommended for spice lovers!"</p>
+        </div>
+        <div class="review">
+            <p><strong>Sophia L.</strong> - 5 stars</p>
+            <p>"Bunga Bites blew me away! The combination of pineapples and roasted peanuts is so unique and delicious. A must-try for food adventurers!"</p>
+        </div>
+    </div>
+        <form class="review-form">
+            <h3>Submit Your Review</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <!-- Contact & Location Page -->
+    <div id="contact">
+        <h2>Contact & Location</h2>
+        <form class="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Reservation Time:</label>
+            <input type="time" id="time" name="time">
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="map">
+            <h3>Visit Us</h3>
+            <!-- Embed Google Maps iframe for both locations -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11624.303466108608!2d-79.87762126484948!3d43.2498317672218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9bcdb04af157%3A0xd76d486980017438!2sCowabunga%20Pizzeria%20-%20Take%20Out%20Only!5e0!3m2!1sen!2sus!4v1733880961383!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11624.303466108608!2d-79.87762126484948!3d43.2498317672218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b9b79a69fff%3A0x804f6c0e7cf6803b!2sCowabunga%2B!5e0!3m2!1sen!2sus!4v1733881181150!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!--Student info
+
+Student #: 301498508
+Student Name : Jakob Lalicon
+Program: COMP 213
+TERM PROJECT
+
+-->
